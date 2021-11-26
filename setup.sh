@@ -1,11 +1,15 @@
 #!/bin/bash
 
-echo "Installing prerequisites..."
+echo "# Installing prerequisites..."
 
 sudo apt update
 
-sudo apt install git, python3, curl
+sudo apt-get install git python3 curl
+
+echo "# Installing pip"
 
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo python3 get-pip.py
+
+echo "# Installing ansible"
 sudo python3 -m pip install ansible
