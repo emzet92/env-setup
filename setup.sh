@@ -4,7 +4,7 @@ echo "# Installing prerequisites..."
 
 sudo apt update
 
-sudo apt-get install git
+sudo apt-get install git -y
 
 echo "# Installing ansible"
 sudo apt install software-properties-common
