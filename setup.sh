@@ -1,18 +1,19 @@
 #!/bin/bash
 
-echo "# Installing prerequisites..."
+echo "#### Installing prerequisites..."
 
-sudo apt update
+sudo apt-get update -y
 
-sudo apt-get install git -y
+sudo apt-get install -y git 
 
-echo "# Installing ansible"
-sudo apt install software-properties-common
+echo "### Installing ansible"
+echo "### 1 ppa:ansible/ansible"
 sudo add-apt-repository --yes --update ppa:ansible/ansible
-sudo apt install ansible -y
+echo "### 2 apt-get install -y ansible"
+sudo apt-get install -y ansible
 
-echo "# Fetching playbook repository..."
+echo "### 3 Fetching playbook repository..."
 git clone https://github.com/emzet92/env-setup.git
 
 
-echo "DONE!!!"
+echo "### DONE!!!"
