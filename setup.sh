@@ -16,4 +16,12 @@ echo "### 3 Fetching playbook repository..."
 git clone https://github.com/emzet92/env-setup.git
 
 
-echo "### DONE!!!"
+echo "### Installation DONE!!!"
+
+echo "### Setup ansible book"
+cd env-setup
+
+echo "### Is right directory?"
+pwd
+
+ansible-playbook test.yml
